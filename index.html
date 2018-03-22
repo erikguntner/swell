@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>New Tab</title>
+</head>
+<body id="body">
+
+    <div class="container">
+        <div class="header">
+            <div class="weather-widget">
+                <div class="weather-widget__forecast"></div>
+                <form id="form__weather">
+                    <div>
+                        <input type="text" class="form__input form__input--weather" placeholder="Weather Location: City, State" id="weatherInput">
+                    </div>                          
+                </form>
+            </div>
+            <a href="http://magicseaweed.com" target="_blank"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a> 
+        </div>
+        <div class="timeContainer">
+            <div class="time" id="time"></div>
+        </div>
+
+        <div class="content">
+            <form class="form">
+                <input type="text" class="form__input form__input--id" placeholder="Spot ID" id="spot_id">
+                <i class="form__help">?
+                    <span class="info">
+                        <ol>
+                            <li>Visit <a href="https://magicseaweed.com/" target="_blank">magicseaweed.com</a> and navigate to the surf spot you wish to add.</li>
+                            <li>You should see a url that looks like this:
+                                <img src="img/url.png" alt="" style="width: 60rem">
+                                The numbers at the end of the URL is the Spot ID for that location.
+                            </li>
+                            <!-- <li>The numbers at the end of the url is the Spot ID for that location</li> -->
+                            <li>Enter the Spot ID in the designated area, give the location a name, and submit.</li>
+                        </ol> 
+                    </span>
+                    <div class="triangle-down"></div>
+                </i>
+                <input type="text" class="form__input form__input--name" placeholder="Name" id="name">
+                <input class="btn" id="submit" type="submit"></submit>                            
+                <!-- <button class="btn" id="submit">Submit</button> -->
+            </form>
+            <div class="forecastsContainer">
+                <div class="forecastsList" id="forecastsList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="weather.js"></script>
+    <script src="forecast.js"></script>
+    <script src="ui.js"></script>
+    <script src="./build/bundle.js"></script>
+</body>
+</html>
